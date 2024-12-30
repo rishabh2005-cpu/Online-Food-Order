@@ -11,11 +11,11 @@ const [data,setData] = useState({
     name:"",
     description:"",
     price:"", 
-    category:"Salad",
+    category:"Salad"
 })
 
 const onChangeHandler = (event)=>{
-    const name = event.target.nam;
+    const name = event.target.name;
     const value = event.target.value;
     setData(data=>({...data,[name]:value}))
 
